@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <h1 id="title">25 + 5 Clock</h1>
+    <div class="upper-container">
+        <div class="break-session">
+            <h2 id="break-label">Break Length</h2>
+            <div class="counter">
+                <button id="break-decrement" onclick="timeSetter('break', '-')">
+                    <i class="fas fa-minus"></i>
+                </button>
+                <span id="break-length"></span>
+                <button id="break-increment" onclick="timeSetter('break', '+')">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+        </div>
+        <div class="break-session">
+            <h2 id="session-label">Session Length</h2>
+            <div class="counter">
+                <button id="session-decrement" onclick="timeSetter('session', '-')">
+                    <i class="fas fa-minus"></i>
+                </button>
+                <span id="session-length"></span>
+                <button id="session-increment" onclick="timeSetter('session', '+')">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="timer">
+        <span id="timer-label"></span>
+        <h1 id='time-left'></h1>
+        <div class="menu">
+            <button id="start_stop" onclick="handlePlayPause()"></button>
+            <button id="reset" onclick="reset()">
+                <i class="fas fa-redo fa-2x"></i>
+            </button>
+        </div>
+    </div>
+    <audio id="beep" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav"></audio>
+
+</body>
+<script src="app.js"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

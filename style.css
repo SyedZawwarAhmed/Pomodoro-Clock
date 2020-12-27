@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+* {
+    margin: 0;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #03054b;
+    font-family: 'Comfortaa', cursive;
+  }
+
+  #title {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  button {
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .upper-container {
+    display: flex;
+  }
+  
+  .break-session {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 20px;
+  }
+  
+  .break-session > h2 {
+    font-weight: normal;
+  }
+
+  .counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .counter > span {
+    font-size: 25px;
+    width: 50px;
+    text-align: center;
+  }
+  
+  .counter > button {
+    height: 30px;
+    width: 30px;
+  }
+  
+  .timer {
+    width: 300px;
+    margin: 0 auto;
+    padding: 18px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 35px;
+  }
+  
+  #timer-label {
+    font-size: 33px;
+    font-weight: normal;
+  }
+  
+  #time-left {
+    font-size: 50px;
+    font-weight: normal;
+    margin: 10px;
+  }
+  
+  .menu > button {
+    height: 40px;
+    width: 40px;
+    margin: 0 10px;
+  }
+  
+  
